@@ -1,0 +1,80 @@
+.caseCorona {
+    width: 90%;
+    margin: 20px auto;
+}
+
+.caseTitle {
+    margin: 50px auto;
+    text-align: center;
+}
+
+.caseTitle h1 {
+    font-weight: 800;
+    padding: 20px;
+}
+
+.caseTitle p {
+    font-weight: 550;
+}
+
+.caseDtl {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 20px 20px;
+
+}
+
+.caseBox {
+    width: 27%;
+    height: 470px;
+    margin: 20px 30px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 20px;
+    position: relative;
+}
+
+.caseImg {
+    height: 50%;
+    width: 100%;
+}
+.caseImg img{
+    height: 100%;
+    width: 100%;
+}
+.caseSubdtl h1{
+    padding: 20px 0 0 0 ;
+}
+.caseSubdtl p{
+    font-size: 14px;
+    padding: 5px 5px 25px 5px;
+    line-height: 20px;
+    text-align: center;
+}
+.virusymbol{
+    position: absolute;
+    top: 88%;
+    left: 35%;
+}
+@media only screen and (max-width:1190px) {
+    .caseBox{
+        height: 500px;
+    }
+    .caseCorona{
+        width: auto;
+        margin: auto;
+    }
+}
+@media only screen and (max-width:915px) {
+    .caseDtl{
+        display: block;
+        margin: auto;
+    }
+    .caseBox{
+        margin-top: 50px;
+    }
+    .caseTitle{
+        margin-bottom: 0px;
+    }
+}

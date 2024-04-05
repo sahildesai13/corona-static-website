@@ -1,0 +1,1561 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.container {
+    width: 90%;
+    height: 80px;
+    background: #ff3e3e;
+    display: flex;
+    margin: auto;
+    position: relative;
+}
+
+.mainMenu a:active {
+    color: rgb(235, 67, 67);
+}
+
+/* header starts*/
+header {
+    display: flex;
+}
+
+.serch {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 20px;
+    height: 40px;
+    z-index: 1 !important;
+    background-color: #0E0E28;
+}
+
+.serch img,
+.conIcon img {
+    width: 80%;
+}
+
+.conIcon {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 20px;
+    height: 40px;
+    z-index: 1 !important;
+    background-color: #0E0E28;
+}
+
+.mainMenu {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: auto;
+}
+
+
+
+
+.mainMenu a {
+    padding: 15px;
+    color: rgb(0, 0, 0);
+    color: white;
+    transition: .5s;
+}
+
+.mainMenu a:hover {
+    color: black;
+}
+
+.logo {
+    position: absolute;
+    top: 44px;
+    background: #ff3e3e;
+    left: 45%;
+    height: 55px;
+    width: 60px;
+    padding: 0px 25px 20px 25px;
+    border-radius: 50%;
+    z-index: 1 !important;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.hoverIcon {
+    display: none;
+    position: absolute;
+    top: 10px;
+    left: 50px;
+    width: 35px;
+    cursor: pointer;
+    padding-bottom: 20px !important;
+}
+
+/*footer starts */
+
+footer {
+    background-color: rgb(15, 15, 15);
+}
+
+.footercontainer {
+    color: white;
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+    align-items: top;
+    padding: 50px;
+    margin-top: 100px;
+    font-size: 14px;
+}
+
+.footercontainer h3 {
+    padding: 20px 0;
+}
+
+.footercontainer div,
+.country img {
+    width: 300px;
+    padding: 15px;
+}
+
+.resoures {
+    width: 250px !important;
+}
+
+.footercontainer p,
+li,
+a {
+    line-height: 25px;
+}
+
+.rigths {
+    width: 70%;
+    margin: auto;
+    text-align: center;
+}
+
+.rigths p {
+    color: grey;
+    padding: 15px;
+}
+
+/*responsive website */
+@media only screen and (max-width:375px) {
+    .container {
+        width: 85%;
+        height: 40px;
+    }
+
+    .hoverIcon {
+        display: block;
+        position: absolute;
+        top: 10px;
+        left: 50px;
+        width: 25px;
+        cursor: pointer;
+        padding-bottom: 20px !important;
+    }
+
+    .mainMenu {
+        width: auto;
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 75px;
+        left: 40px;
+        opacity: 0;
+        padding: 5px 10px;
+        transition: 0.4s;
+        visibility: hidden;
+        z-index: 2 !important;
+        background-color: rgb(255, 62, 62, 0.9);
+    }
+
+    .container:hover .mainMenu {
+        visibility: visible;
+        opacity: 1;
+        top: 30px;
+    }
+
+    .serch,
+    .conIcon {
+        padding: 5px;
+        height: 30px;
+    }
+
+    .conIcon img,
+    .serch img {
+        width: 50%;
+    }
+
+    .mainvirus {
+        height: 500px !important;
+    }
+
+    .logo {
+        left: 42%;
+        height: 40px;
+        width: 40px;
+        top: 5px;
+    }
+
+    /*header End */
+
+    .owl-next,
+    .owl-prev {
+        width: 50px !important;
+        height: 50px !important;
+        font-size: 18px !important;
+    }
+
+    .btn,
+    .slidertxt button {
+        padding: 10px 10px !important;
+        font-size: 10px !important;
+    }
+
+    .conIcon,
+    .serch {
+        padding: 5px 2px;
+        height: 31px;
+    }
+
+    .mainMenu a {
+        padding: 5px 1px 5px 1px;
+        font-size: 10px;
+    }
+
+    .slidertxt {
+        left: 2em !important;
+        font-size: 20px !important;
+    }
+
+    .virusTxt {
+        padding: 10px !important;
+    }
+
+    .coronadtl {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 100px auto !important;
+        margin-top: 200px !important;
+    }
+
+    .virusImg1 {
+        width: 170px;
+        padding-left: 50px;
+    }
+
+    .aboutVirus {
+        padding: 50px 20px 20px 20px !important;
+        width: 85% !important;
+    }
+
+    .virusImg2 {
+        width: 60px;
+        padding-left: 30px;
+    }
+
+    .whatvirus {
+        width: 90% !important;
+    }
+
+    .slidertxt button {
+        padding: 10px 20px !important;
+        margin: 25px 5px !important;
+    }
+
+    .footercontainer,
+    .docTalk,
+    .aboutVirus {
+        display: grid !important;
+        justify-content: center;
+        align-items: center;
+        grid-template-columns: auto;
+    }
+
+    .aboutVirus {
+        padding: 50px 0 0 0;
+    }
+
+    /* slider start */
+
+    .infoSlider {
+        border-radius: 30px !important;
+        object-fit: contain;
+    }
+
+    .slick-next,
+    .slick-prev {
+        height: 50px !important;
+        width: 50px !important;
+    }
+
+    .responsive {
+        padding: 20% 0 18% 0 !important;
+    }
+
+    .item {
+        width: 180px !important;
+        height: 170px !important;
+    }
+
+
+    /*slider End */
+
+    .caseDtl {
+        width: 100% !important;
+        flex-direction: column !important;
+    }
+
+    .caseBox {
+        width: 70% !important;
+        height: 550px !important;
+        margin: 0px 0 30px 0;
+    }
+
+    .virusymbol img {
+        position: absolute;
+        bottom: -45px !important;
+        left: -18px;
+    }
+
+    .caseSubdtl p {
+        font-size: 14px !important;
+        padding: 5px 5px 25px 5px !important;
+    }
+
+    .docTalk {
+        justify-content: center !important;
+    }
+
+    .caseImg {
+        height: 55% !important;
+    }
+
+    .footercontainer div {
+        width: 210px !important;
+    }
+
+    .virusymbol {
+        position: absolute;
+        bottom: 0;
+        left: 39% !important;
+    }
+
+    .DocTitle {
+        padding: 50px 0 25px 0 !important;
+        font-size: 13px !important;
+    }
+
+    .docs {
+        padding: 20px !important;
+        margin: 70px 0 0 0;
+        width: 220px !important;
+        box-shadow: 0 4px 25px 0 rgba(0, 0, 0, 0.2), 0 6px 25px 0 rgba(0, 0, 0, 0.19) !important;
+    }
+
+    .docsimg {
+        left: 19% !important;
+    }
+
+    .country img {
+        width: 220px;
+        padding: 0px;
+    }
+
+    .footercontainer {
+        width: auto;
+    }
+}
+
+@media only screen and (max-width:425px) and (min-width:375px) {
+    .container {
+        width: 85%;
+        height: 40px;
+    }
+
+    .hoverIcon {
+        display: block;
+        position: absolute;
+        top: 10px;
+        left: 50px;
+        width: 30px;
+        cursor: pointer;
+        padding-bottom: 20px !important;
+    }
+
+    .mainMenu {
+        width: auto;
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 75px;
+        left: 40px;
+        opacity: 0;
+        padding: 5px 10px;
+        transition: 0.4s;
+        visibility: hidden;
+        z-index: 2 !important;
+        background-color: rgb(255, 62, 62, 0.9);
+    }
+
+    .container:hover .mainMenu {
+        visibility: visible;
+        opacity: 1;
+        top: 30px;
+
+    }
+
+    .serch,
+    .conIcon {
+        padding: 5px;
+        height: 30px;
+    }
+
+    .conIcon img,
+    .serch img {
+        width: 50%;
+    }
+
+    .mainvirus {
+        height: 500px !important;
+    }
+
+    .logo {
+        left: 42%;
+        height: 50px;
+        width: 50px;
+        top: 5px;
+    }
+
+    /*header End */
+    /* slider start */
+
+    .infoSlider {
+        border-radius: 30px !important;
+    }
+
+    .slick-next,
+    .slick-prev {
+        height: 50px !important;
+        width: 50px !important;
+        bottom: -60px !important;
+    }
+
+    .responsive {
+        padding: 20% 0 18% 0 !important;
+    }
+
+    .item {
+        width: 180px !important;
+        height: 170px !important;
+    }
+
+
+    /*slider End */
+    .mainMenu a {
+        padding: 7px 0px !important;
+        font-size: 12px;
+    }
+
+    .owl-next,
+    .owl-prev {
+        width: 50px !important;
+        height: 50px !important;
+        font-size: 18px !important;
+    }
+
+    .slidertxt button {
+        font-size: 12px !important;
+    }
+
+
+
+    .mainMenu a {
+        padding: 10px 2px 10px 2px;
+        font-size: 7px;
+    }
+
+    .slidertxt {
+        left: 3em !important;
+        font-size: 22px !important;
+    }
+
+    .virusTxt {
+        padding: 10px !important;
+    }
+
+    .coronadtl {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 100px auto !important;
+    }
+
+    .virusImg1 {
+        width: 170px;
+        padding-left: 100px;
+    }
+
+    .virusImg2 {
+        width: 60px;
+        padding-left: 70px;
+    }
+
+    .whatvirus {
+        width: 90% !important;
+    }
+
+    .slidertxt button {
+        padding: 15px 30px !important;
+    }
+
+    .footercontainer,
+    .docTalk,
+    .aboutVirus {
+        display: grid !important;
+        justify-content: center;
+        align-items: center;
+        grid-template-columns: auto;
+    }
+
+    .aboutVirus {
+        padding: 50px 0 0 0 !important;
+        width: 100% !important;
+    }
+
+    .caseDtl {
+        width: 90% !important;
+        flex-direction: column !important;
+    }
+
+    .caseBox {
+        width: 80% !important;
+        height: 600px !important;
+        margin: 0px 0 30px 0;
+    }
+
+    .docTalk {
+        justify-content: center !important;
+    }
+
+    .caseImg {
+        height: 55% !important;
+    }
+
+    .virusymbol img {
+        position: absolute;
+        bottom: -40px !important;
+    }
+
+    .docTitle {
+        padding: 55px 0 25px 0;
+    }
+
+    .docs {
+        padding: 20px !important;
+        margin: 70px 0 0 0;
+        width: 260px !important;
+        font-size: 12px !important;
+    }
+
+    .docsimg {
+        left: 26% !important;
+    }
+
+    .btn,
+    .slidertxt button {
+        padding: 15px 15px !important;
+    }
+
+    .country img {
+        width: 220px;
+        padding: 0px;
+    }
+}
+
+@media only screen and (max-width:474.99px) and (min-width:425px) {
+    .container {
+        width: 85%;
+        height: 50px;
+    }
+
+    .hoverIcon {
+        display: block;
+        position: absolute;
+        top: 10px;
+        left: 50px;
+        width: 35px;
+        cursor: pointer;
+        padding-bottom: 20px !important;
+    }
+
+    .mainMenu {
+        width: auto;
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 75px;
+        left: 50px;
+        opacity: 0;
+        padding: 20px 20px;
+        transition: 0.4s;
+        visibility: hidden;
+        z-index: 2 !important;
+        background-color: rgb(255, 62, 62, 0.9);
+    }
+
+    .container:hover .mainMenu {
+        visibility: visible;
+        opacity: 1;
+        top: 50px;
+
+    }
+
+    .serch,
+    .conIcon {
+        padding: 15px;
+        height: 20px;
+    }
+
+    .conIcon img,
+    .serch img {
+        width: 70%;
+    }
+
+    .mainvirus {
+        height: 500px !important;
+    }
+
+    .logo {
+        left: 42%;
+        height: 50px;
+        width: 50px;
+        top: 15px;
+    }
+
+    /*header End */
+    .mainMenu a {
+        padding: 7px 0px !important;
+        font-size: 10px;
+    }
+
+
+    /*slider  start*/
+    .infoSlider {
+        border-radius: 30px !important;
+    }
+
+    .slick-next,
+    .slick-prev {
+        height: 50px !important;
+        width: 50px !important;
+        bottom: -40px !important;
+    
+    }
+
+    .responsive {
+        padding: 20% 0 18% 0 !important;
+    }
+
+    .item {
+        width: 180px !important;
+        height: 170px !important;
+    }
+
+    /*slider  End*/
+
+    .conIcon,
+    .serch {
+
+        padding: 10px;
+        height: 30px;
+    }
+
+    .mainMenu a {
+        padding: 15px 0px;
+        font-size: 8px;
+    }
+
+    .slidertxt {
+        left: 3em !important;
+        font-size: 22px !important;
+    }
+
+    .virusTxt {
+        padding: 10px !important;
+    }
+
+    .coronadtl {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 100px auto !important;
+        margin-top: 200px !important;
+    }
+
+    .virusImg1 {
+        width: 170px;
+        padding-left: 100px;
+    }
+
+    .footercontainer {
+        padding: 0;
+    }
+
+    .virusImg2 {
+        width: 60px;
+        padding-left: 70px;
+    }
+
+    .whatvirus {
+        width: 90% !important;
+    }
+
+    .slidertxt button {
+        padding: 15px 30px !important;
+    }
+
+    .footercontainer,
+    .docTalk,
+    .aboutVirus {
+        display: grid !important;
+        justify-content: center;
+        align-items: center;
+        grid-template-columns: auto;
+    }
+
+    .aboutVirus {
+        padding: 50px 10px 0 10px !important;
+        width: 95% !important;
+    }
+
+    .caseDtl {
+        width: 90% !important;
+        flex-direction: column !important;
+    }
+
+    .caseBox {
+        width: 70% !important;
+        height: 500px !important;
+        margin: 0px 0 30px 0;
+    }
+
+    .caseSubdtl p {
+        font-size: 14px !important;
+        padding: 20px 5px 15px 5px !important;
+        line-height: 16px !important;
+        text-align: center;
+    }
+
+    .docTalk {
+        justify-content: center !important;
+    }
+
+    .caseImg {
+        height: 55% !important;
+    }
+
+    .caseTitle p {
+        font-weight: 100 !important;
+        font-size: 14px;
+        line-height: 18px;
+    }
+
+    .virusymbol {
+        position: absolute;
+        bottom: 0;
+        left: 36% !important;
+    }
+
+    .docTitle {
+        padding: 55px 0 25px 0;
+    }
+
+    .docs {
+        padding: 20px !important;
+        margin: 70px 0 0 0;
+        width: 320px !important;
+        box-shadow: 0 1px 20px 0 rgba(0, 0, 0, 0.2), 0 2px 20px 0 rgba(0, 0, 0, 0.11) !important;
+    }
+
+    .docsimg img,
+    .docsimg {
+        left: 30.5% !important;
+    }
+
+    .btn,
+    .slidertxt button {
+        padding: 15px 15px !important;
+    }
+
+    .country img {
+        width: 220px;
+        padding: 0px;
+    }
+}
+
+@media only screen and (max-width:582px) and (min-width:475px) {
+    .container {
+        width: 85%;
+        height: 50px;
+    }
+
+    .slick-next,.slick-prev{
+        bottom: -60px !important;
+    }
+    .hoverIcon {
+        display: block;
+        position: absolute;
+        top: 10px;
+        left: 50px;
+        width: 35px;
+        cursor: pointer;
+        padding-bottom: 20px !important;
+    }
+
+    .mainMenu {
+        width: auto;
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 75px;
+        left: 50px;
+        opacity: 0;
+        padding: 20px 20px;
+        transition: 0.4s;
+        visibility: hidden;
+        z-index: 2 !important;
+        background-color: rgb(255, 62, 62, 0.9);
+    }
+
+    .container:hover .mainMenu {
+        visibility: visible;
+        opacity: 1;
+        top: 50px;
+
+    }
+
+    .serch,
+    .conIcon {
+        padding: 15px;
+        height: 20px;
+    }
+
+    .conIcon img,
+    .serch img {
+        width: 70%;
+    }
+
+    .mainvirus {
+        height: 500px !important;
+    }
+
+    .logo {
+        left: 42%;
+        height: 50px;
+        width: 50px;
+        top: 15px;
+    }
+
+    /*header End */
+    .mainMenu a {
+        padding: 10px 0px;
+        font-size: 10px;
+    }
+
+    .slidertxt {
+        left: 3em !important;
+        font-size: 25px !important;
+    }
+
+    .coronadtl {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 100px auto !important;
+        margin-top: 50px !important;
+    }
+
+    .virusImg1 {
+        width: 200px;
+        padding-left: 120px;
+    }
+
+    .mainvirus {
+        height: 700px;
+    }
+
+    .virusImg2 {
+        width: 80px;
+        padding-left: 70px;
+    }
+
+    .whatvirus {
+        width: 90% !important;
+    }
+
+    .slidertxt button {
+        padding: 15px 30px !important;
+    }
+
+    .footercontainer,
+    .docTalk,
+    .aboutVirus {
+        display: grid !important;
+        justify-content: center;
+        align-items: center;
+        grid-template-columns: auto;
+    }
+
+    .aboutVirus {
+        padding: 50px 0 0 0;
+    }
+
+    .caseDtl {
+        width: 70% !important;
+        flex-direction: column !important;
+    }
+
+    .caseBox {
+        width: 80% !important;
+        height: 500px !important;
+        margin: 0px 0 30px 0;
+    }
+
+    .caseImg {
+        height: 55% !important;
+    }
+
+    .virusymbol {
+        position: absolute;
+        bottom: 0;
+        left: 34% !important;
+    }
+
+    .docs {
+        margin: 70px 0 0 0;
+    }
+
+    .country img,
+    .footercontainer div {
+        width: 220px;
+        padding: 0px;
+    }
+}
+
+@media only screen and (max-width:668px) and (min-width:582px) {
+
+    .container {
+        width: 85%;
+        height: 50px;
+    }
+
+    .slick-next,.slick-prev{
+        bottom: -120px !important;
+    }
+    .hoverIcon {
+        display: block;
+        position: absolute;
+        top: 10px;
+        left: 50px;
+        width: 35px;
+        cursor: pointer;
+        padding-bottom: 20px !important;
+    }
+
+    .mainMenu {
+        width: auto;
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 75px;
+        left: 50px;
+        opacity: 0;
+        padding: 20px 20px;
+        transition: 0.4s;
+        visibility: hidden;
+        z-index: 2 !important;
+        background-color: rgb(255, 62, 62, 0.9);
+    }
+
+    .container:hover .mainMenu {
+        visibility: visible;
+        opacity: 1;
+        top: 50px;
+
+    }
+
+    .serch,
+    .conIcon {
+        padding: 15px;
+        height: 20px;
+    }
+
+    .conIcon img,
+    .serch img {
+        width: 70%;
+    }
+
+    .mainvirus {
+        height: 500px !important;
+    }
+
+    .logo {
+        left: 42%;
+        height: 50px;
+        width: 50px;
+        top: 15px;
+    }
+
+    /*header End */
+
+    .mainMenu a {
+        padding: 15px 2px;
+        font-size: 12px;
+    }
+
+    .caseDtl {
+        width: 70% !important;
+        flex-direction: column !important;
+    }
+
+    .caseBox {
+        width: 80% !important;
+        height: 500px !important;
+        margin: 0px 0 30px 0;
+    }
+
+    .caseImg {
+        height: 55% !important;
+    }
+
+    .slidertxt {
+        left: 4em !important;
+        font-size: 35px !important;
+    }
+
+    .slidertxt button {
+        padding: 15px 40px !important;
+    }
+
+    .aboutVirus {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        row-gap: 20px;
+    }
+
+    .aboutVirus {
+        padding: 50px 20px 20px 20px !important;
+    }
+
+    .virusImg1 {
+        width: 200px;
+    }
+
+    .virusImg2 {
+        width: 80px;
+    }
+
+    .coronadtl {
+        flex-direction: column;
+        margin: 100px auto !important;
+    }
+
+    .whatvirus {
+        width: 70% !important;
+    }
+
+    .footercontainer {
+        display: grid !important;
+        justify-content: center;
+        grid-template-columns: auto auto;
+    }
+
+    .footercontainer div,
+    .country img {
+        width: 230px;
+        padding: 15px;
+    }
+}
+
+@media only screen and (max-width:727px) and (min-width:668px) {
+    .container {
+        width: 85%;
+        height: 50px;
+    }
+    .caseDtl {
+        width: 70% !important;
+        flex-direction: column !important;
+    }
+
+    .caseBox {
+        width: 80% !important;
+        height: 500px !important;
+        margin: 0px 0 30px 0;
+    }
+
+    .caseImg {
+        height: 55% !important;
+    }
+    .hoverIcon {
+        display: block;
+        position: absolute;
+        top: 10px;
+        left: 50px;
+        width: 35px;
+        cursor: pointer;
+        padding-bottom: 20px !important;
+    }
+
+    .mainMenu {
+        width: auto;
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 75px;
+        left: 50px;
+        opacity: 0;
+        padding: 20px 20px;
+        transition: 0.4s;
+        visibility: hidden;
+        z-index: 2 !important;
+        background-color: rgb(255, 62, 62, 0.9);
+    }
+
+    .container:hover .mainMenu {
+        visibility: visible;
+        opacity: 1;
+        top: 50px;
+
+    }
+
+    .serch,
+    .conIcon {
+        padding: 15px;
+        height: 20px;
+    }
+
+    .conIcon img,
+    .serch img {
+        width: 70%;
+    }
+
+    .logo {
+        left: 42%;
+        height: 50px;
+        width: 50px;
+        top: 15px;
+    }
+
+    .mainMenu a {
+        padding: 15px 5px;
+        font-size: 14px;
+    }
+
+    .mainvirus {
+        height: 500px !important;
+    }
+
+
+
+    .mainMenu a {
+        padding: 15px 2px;
+        font-size: 12px;
+    }
+
+    .slidertxt {
+        left: 4em !important;
+        font-size: 35px !important;
+    }
+
+    .slidertxt button {
+        padding: 15px 40px !important;
+    }
+
+    .docTalk,
+    .aboutVirus {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        row-gap: 20px;
+    }
+
+    .aboutVirus {
+        padding: 50px 20px 20px 20px !important;
+    }
+
+    .virusImg1 {
+        width: 200px;
+    }
+
+    .virusImg2 {
+        width: 80px;
+    }
+
+    .coronadtl {
+        flex-direction: column;
+        margin: 100px auto !important;
+    }
+
+    .whatvirus {
+        width: 70% !important;
+    }
+
+    .footercontainer {
+        display: grid !important;
+        justify-content: center;
+        grid-template-columns: auto auto;
+    }
+    .docs{
+        margin-top: 50px;
+    }
+    .country img {
+        width: 255px;
+    }
+    .slick-next,.slick-prev{
+        bottom: -108px !important;
+    }
+}
+
+@media only screen and (max-width:824px) and (min-width:726px) {
+    .container {
+        width: 87%;
+        height: 50px;
+        background: #ff3e3e;
+        display: flex;
+        margin: auto;
+        position: relative;
+    }
+
+    .hoverIcon {
+        display: block;
+        position: absolute;
+        top: 10px;
+        left: 50px;
+        width: 35px;
+        cursor: pointer;
+        padding-bottom: 20px !important;
+    }
+
+    .mainMenu {
+        width: auto;
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 75px;
+        left: 50px;
+        opacity: 0;
+        padding: 20px 20px;
+        transition: 0.4s;
+        visibility: hidden;
+        z-index: 2 !important;
+        background-color: rgb(255, 62, 62, 0.9);
+    }
+
+    .container:hover .mainMenu {
+        visibility: visible;
+        opacity: 1;
+        top: 50px;
+    }
+
+    .serch,
+    .conIcon {
+        padding: 15px;
+        height: 20px;
+    }
+
+    .conIcon img,
+    .serch img {
+        width: 70%;
+    }
+
+    .logo {
+        left: 42%;
+        height: 50px;
+        width: 50px;
+        top: 15px;
+    }
+
+    .mainMenu a {
+        padding: 15px 5px;
+        font-size: 14px;
+    }
+
+    /* header end */
+
+
+    .mainvirus {
+        height: 550px !important;
+    }
+
+    .caseDtl {
+        width: 70% !important;
+        flex-direction: column !important;
+    }
+
+    .caseBox {
+        width: 80% !important;
+        height: 450px !important;
+        margin: 0px 0 30px 0;
+    }
+
+    .caseImg {
+        height: 55% !important;
+    }
+
+    .virusymbol {
+        position: absolute;
+        bottom: 0;
+        left: 40% !important;
+    }
+
+    .docs {
+        margin: 30px 0 0 0;
+        box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.2), 0 6px 50px 0 rgba(0, 0, 0, 0.19) !important;
+        padding: 15px !important;
+    }
+
+    .footercontainer {
+        display: grid !important;
+        justify-content: center;
+        grid-template-columns: auto auto;
+    }
+
+    .datafill {
+        width: 100%;
+    }
+
+    .country img {
+        width: 270px;
+    }
+}
+
+@media only screen and (max-width:915px) and (min-width:824px) {
+    .container {
+        width: 87%;
+    }
+
+    .logo {
+        left: 42.5%;
+    }
+
+    .mainMenu a {
+        padding: 15px 5px;
+        font-size: 14px;
+    }
+
+    .slidertxt {
+        left: 4em !important;
+        font-size: 35px !important;
+    }
+
+    .caseDtl {
+        width: 70% !important;
+        flex-direction: column !important;
+    }
+
+    .virusImg1 {
+        width: 170px;
+    }
+    .slick-next,.slick-prev{
+        bottom:-110px !important;
+    }
+    .virusImg2 {
+        width: 60px;
+    }
+
+    .logo {
+        left: 43.5%;
+    }
+
+    .mainMenu a {
+        padding: 15px 10px;
+    }
+
+    .mainvirus {
+        height: 400px !important;
+    }
+
+    .caseDtl {
+        width: 70% !important;
+        flex-direction: column !important;
+    }
+
+    .caseBox {
+        width: 80% !important;
+        height: 450px !important;
+        margin: 0px 0 30px 0;
+    }
+
+    .caseImg {
+        height: 55% !important;
+    }
+
+    .virusymbol {
+        position: absolute;
+        top: 88%;
+        left: 41% !important;
+    }
+
+    .docs {
+        margin: 30px 0 0 0;
+        box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.2), 0 6px 50px 0 rgba(0, 0, 0, 0.19) !important;
+        padding: 15px !important;
+    }
+
+    .footercontainer {
+        display: grid !important;
+        grid-template-columns: auto auto;
+    }
+
+    .datafill {
+        width: 100%;
+    }
+    .docsimg img{
+        left: 6% !important;
+    }
+
+}
+
+@media only screen and (max-width:1021px) and (min-width:915px) {
+    .container {
+        width: 87%;
+    }
+
+    .virusImg1 {
+        width: 200px;
+    }
+
+    .virusImg2 {
+        width: 80px;
+    }
+
+    .logo {
+        left: 43.5%;
+    }
+
+    .mainMenu a {
+        padding: 15px 10px;
+    }
+
+    .mainvirus {
+        height: 300px !important;
+    }
+
+    .caseDtl {
+        width: 70% !important;
+        flex-direction: column !important;
+    }
+
+    .caseBox {
+        width: 80% !important;
+        height: 400px !important;
+        margin: 0px 0 30px 0;
+    }
+
+    .caseImg {
+        height: 55% !important;
+    }
+
+    .virusymbol {
+        position: absolute;
+        top: 88%;
+        left: 42% !important;
+    }
+
+    .docs {
+        box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.2), 0 6px 50px 0 rgba(0, 0, 0, 0.19) !important;
+        padding: 15px !important;
+    }
+
+    .footercontainer {
+        display: grid !important;
+        grid-template-columns: auto auto;
+    }
+}
+
+@media only screen and (max-width:1084px) and (min-width:1021px) {
+    .container {
+        width: 87%;
+    }
+
+    .logo {
+        left: 43.5%;
+    }
+
+    .virusImg1 {
+        width: 250px;
+    }
+
+    .item {
+        width: 260px !important;
+    }
+
+    .caseDtl {
+        width: 100%;
+    }
+
+    .caseBox {
+        height: 500px !important;
+        padding: 10 !important;
+    }
+
+    .docTalk {
+        width: 85% !important;
+    }
+
+}
+
+@media only screen and (max-width:1190px) and (min-width: 1084px) {
+    .container {
+        width: 89%;
+    }
+
+    .logo {
+        left: 44%;
+    }
+}
+
+@media only screen and (max-width:1284px) and (min-width: 1190px) {
+    .container {
+        width: 90%;
+    }
+
+    .logo {
+        left: 45%;
+    }
+}
+
+@media only screen and (max-width:1440px) and (min-width: 1284px) {
+    .container {
+        width: 91%;
+    }
+
+    .logo {
+        left: 45%;
+    }
+}
+
+@media only screen and (max-width: 2560px) and (min-width: 1440px) {
+    .logo {
+        left: 46%;
+    }
+
+    .container {
+        width: 95%;
+    }
+}
